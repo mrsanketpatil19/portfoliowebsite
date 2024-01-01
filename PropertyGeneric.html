@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">Hyperspace</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="PropertyGeneric.html" class="active">Generic</a></li>
+						<li><a href="elements.html">Elements</a></li>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+<div class="inner">
+    <h1 class="major">More about Propert Price Prediction</h1>
+    <span class="image fit"><img src="images/Property2.jpg" alt="" width="500" height="600" /></span>
+
+    <h2>Data Preprocessing:</h2>
+    <ul>
+        <li><strong>Import Libraries:</strong> Import required libraries for data analysis and preprocessing.</li>
+        <li><strong>Load Dataset:</strong> Read the dataset into a Pandas DataFrame.</li>
+        <li><strong>Understand Data:</strong> Explore the dataset by checking column names, descriptive statistics, shape, data types, and null values.</li>
+        <li><strong>Handle Unique Values:</strong> Remove columns with unique identifiers that don't contribute to modeling.</li>
+        <li><strong>Handle Dates:</strong> Create a new column representing the age of houses and remove date-related columns.</li>
+        <li><strong>Handle Null Values:</strong> Replace null values in specific columns with appropriate values.</li>
+        <li><strong>Drop Columns with High Null Percentage:</strong> Drop columns with more than 75% null values.</li>
+        <li><strong>Impute Null Values:</strong> Impute remaining null values with mean for numeric columns and mode for categorical columns.</li>
+        <li><strong>Convert Discrete Numeric to Factor:</strong> Convert certain numerical columns into categorical (factor) columns.</li>
+        <li><strong>Handle Negative Values:</strong> Clip negative values in specific area columns to zero.</li>
+        <li><strong>Drop Biased Columns:</strong> Remove columns that exhibit single-value dominance or are deemed biased.</li>
+    </ul>
+
+    <h2>Target Variable Analysis:</h2>
+    <ul>
+        <li><strong>Rename Target Variable:</strong> Rename the target variable for better clarity.</li>
+        <li><strong>Visualize Target Variable Distribution:</strong> Plot the distribution of the target variable.</li>
+    </ul>
+
+    <h2>Exploratory Data Analysis (EDA):</h2>
+    <ul>
+        <li><strong>Separate Numeric and Categorical Features:</strong> Split the dataset into numeric and categorical features.</li>
+        <li><strong>Create Count Plots:</strong> Create count plots for categorical features.</li>
+    </ul>
+
+    <h2>Correlation Analysis:</h2>
+    <ul>
+        <li><strong>Create Correlation Matrix:</strong> Generate a correlation matrix for numeric features.</li>
+        <li><strong>Visualize Correlation Matrix:</strong> Visualize the correlation matrix using a heatmap.</li>
+    </ul>
+
+    <h2>Data Splitting:</h2>
+    <ul>
+        <li><strong>Split Dataset:</strong> Split the dataset into training and testing sets.</li>
+    </ul>
+
+    <h2>Model Comparison:</h2>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>R2</th>
+            <th>MSE</th>
+            <th>RMSE</th>
+            <th>MAE</th>
+        </tr>
+        <tr>
+            <td>Linear</td>
+            <td>92.91%</td>
+            <td>5.92e+08</td>
+            <td>24,325.07</td>
+            <td>16,736.98</td>
+        </tr>
+        <tr>
+            <td>Lasso</td>
+            <td>86.48%</td>
+            <td>5.81e+08</td>
+            <td>24,097.18</td>
+            <td>16,638.53</td>
+        </tr>
+        <tr>
+            <td>Ridge</td>
+            <td>87.80%</td>
+            <td>5.24e+08</td>
+            <td>22,886.35</td>
+            <td>16,125.28</td>
+        </tr>
+        <tr>
+            <td>Elasticnet</td>
+            <td>83.61%</td>
+            <td>7.04e+08</td>
+            <td>26,527.72</td>
+            <td>18,249.47</td>
+        </tr>
+    </table>
+
+    <h2>Conclusion:</h2>
+    <p>Based on the model comparison:</p>
+    <ul>
+        <li><strong>Linear Regression</strong> has the highest R-squared value (92.91%) and the lowest RMSE (24,325.07), making it the best-performing model among the four.</li>
+        <li><strong>Ridge Regression</strong> follows closely with an R2 of 87.80% and a lower RMSE (22,886.35) compared to Lasso and Elastic Net.</li>
+        <li><strong>Lasso Regression</strong> and <strong>Elastic Net Regression</strong> have slightly lower R2 values and higher RMSE and MAE, indicating they are less accurate for this dataset.</li>
+        <li>Therefore, the <strong>Linear Regression</strong> model is recommended for this specific predictive task.</li>
+        <p>Click <a href="https://github.com/mrsanketpatil19/House_Price_Prediction/tree/main" target="_blank"><strong>here</strong></a> to access the code on GitHub.</p>
+    </ul>
+</div>
+
+</section>
+
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
